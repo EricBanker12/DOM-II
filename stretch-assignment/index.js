@@ -4,6 +4,7 @@ let lowest = -1
 document.addEventListener('click', function(event){
     if (event.target.matches('.block')) {
         event.target.style.order = lowest
+        event.target.style.transition = 'order 3s'
         lowest--
     }
 })
